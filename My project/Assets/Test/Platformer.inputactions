@@ -1,1 +1,56 @@
-{}
+{
+    "name": "Platformer",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "274fb2da-6cd7-4c3d-b7d4-9585a630d3ca",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "3b911114-2528-4b46-8af6-3f5b18806414",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Horizontal Movement",
+                    "id": "5a751dac-4413-4a53-aa82-20d8173eebf3",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "afd5a20b-e12e-4cd3-a497-877ce4dc6a0c",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "cbe2710f-61d6-4659-ac15-eba87fc5763a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
