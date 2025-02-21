@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 695203145}
   - component: {fileID: 695203147}
   m_Layer: 6
-  m_Name: Virtual Camera
+  m_Name: Virtual Camera (static)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 1540647504}
   - component: {fileID: 1540647503}
   m_Layer: 6
-  m_Name: Confines
+  m_Name: Camera Confines (static)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
