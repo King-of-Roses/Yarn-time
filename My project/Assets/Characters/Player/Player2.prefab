@@ -132,10 +132,12 @@ MonoBehaviour:
   walkSpeed: 5
   airwalkSpeed: 2
   runSpeed: 7
-  jumpImpulse: 10
+  jumpImpulse: 3.5
   _isMoving: 0
   _isRunning: 0
   _isFacingRight: 1
+  maxJumpTime: 0.2
+  jumpMultiplier: 1.5
 --- !u!114 &6779251532121572643
 MonoBehaviour:
   m_ObjectHideFlags: 0

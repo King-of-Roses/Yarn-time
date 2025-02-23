@@ -58,6 +58,8 @@ public class PlayerController2 : MonoBehaviour
 
     private bool _isDead = false;
 
+    private bool _isJumping = false;
+
     public bool IsMoving
     {
         get
@@ -81,6 +83,19 @@ public class PlayerController2 : MonoBehaviour
         {
             _isRunning = value;
             animator.SetBool("_isRunning", value);
+        }
+    }
+
+    public bool IsJumping
+    {
+        get
+        {
+            return _isJumping;
+        }
+        private set
+        {
+            _isJumping = value;
+
         }
     }
 
@@ -110,6 +125,10 @@ public class PlayerController2 : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
+
+    private float jumpTimeCounter;
+    public float maxJumpTime = 0.2f;  // 允许长按跳跃的最大时间
+    public float jumpMultiplier = 1.5f; // 长按跳跃时的额外提升倍率
 
 
     private void Awake()
@@ -173,8 +192,24 @@ public class PlayerController2 : MonoBehaviour
         {
             animator.SetTrigger("jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+            jumpTimeCounter = maxJumpTime;  // 允许额外跳跃的时间
+            _isJumping = true;
         }
 
+        if (context.performed && IsJumping) // 按住跳跃键
+        {
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpImpulse * jumpMultiplier);
+                jumpTimeCounter -= Time.deltaTime;
+            }
+        }
+
+        if (context.canceled) // 松开跳跃键，立即停止额外上升
+        {
+            _isJumping = false;
+
+        }
     }
 
     public void Die()
