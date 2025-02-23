@@ -4,22 +4,14 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using FMOD.Studio;
 
 [RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
 {
-
-    private EventInstance PlayerFootSteps;
-    //
-
     public float walkSpeed = 5f;
     public float airwalkSpeed = 2f;
     public float runSpeed = 7f;
     public float jumpImpulse = 10f;
-
-
-    Vector2 startPosition;
 
     Vector2 moveInput;
 
@@ -57,8 +49,7 @@ public class PlayerController : MonoBehaviour
     private bool _isMoving = false;
     [SerializeField]
     private bool _isRunning = false;
-
-    private bool _isDead = false;
+ 
 
     public bool IsMoving { get 
         {
@@ -84,16 +75,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public bool IsDead
-    {
-        get { return _isDead; }
-        private set
-        {
-            _isDead = value;
-            animator.SetBool("_isDead", value); 
-        }
-    }
-
     public bool _isFacingRight = true;
     public bool IsFacingRight { get{ return _isFacingRight; } private set{
             if(_isFacingRight != value)
@@ -112,22 +93,16 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
-        startPosition = transform.position;
     }
 
     // Start is called before the first frame update
-    private void Start()
-    {
-        PlayerFootSteps = AudioManager.instance.CreateInstance(FmodEvents.instance.playerFootSteps);
-    }
+    
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
 
         animator.SetFloat("yVelocity",rb.velocity.y);
-
-        UpdateSound();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -170,47 +145,5 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
         }
     
-    }
-
-    public void Die()
-    {
-        if (IsDead) return; // 避免重复死亡
-        IsDead = true; // 标记角色已死亡
-        animator.Play("player_die"); // 直接播放死亡动画
-        StartCoroutine(RespawnAfterDeath());
-
-    }
-
-    private IEnumerator RespawnAfterDeath()
-    {
-        // 等待死亡动画播放完成
-        yield return new WaitForSeconds(0.5f);
-
-        Respawn();
-    }
-
-    public void Respawn()
-    {
-        transform.position = startPosition;
-        IsDead = false;
-    }
-
-    private void UpdateSound()
-    {
-        //start footsteps event if the player has an x velocity and is on the ground
-        if (rb.velocity.x != 0 && touchingDirections.IsGrounded)
-        {
-            //get the playback state
-            PLAYBACK_STATE playbackState;
-            PlayerFootSteps.getPlaybackState(out playbackState);
-            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
-            {
-                PlayerFootSteps.start();
-            }
-        }
-        else
-        {
-            PlayerFootSteps.stop(STOP_MODE.ALLOWFADEOUT);
-        }
     }
 }
