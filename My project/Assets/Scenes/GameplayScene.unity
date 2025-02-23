@@ -289,7 +289,7 @@ MonoBehaviour:
       Data2: 1282428152
       Data3: -1392857937
       Data4: -737428965
-    Path: event:/PlayerFootSteps
+    Path: event:/SFX/PlayerFootSteps
 --- !u!1 &349163225
 GameObject:
   m_ObjectHideFlags: 0

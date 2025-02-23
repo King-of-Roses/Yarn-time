@@ -5,6 +5,14 @@ using FMODUnity;
 
 public class FmodEvents : MonoBehaviour
 {
+    [field: Header("Ambience")]
+
+    [field: SerializeField] public EventReference ambience { get; private set; }
+
+    [field: Header("Music")]
+
+    [field: SerializeField] public EventReference music { get; private set; }
+
     [field: Header("Player SFX")]
 
     [field: SerializeField] public EventReference playerFootSteps { get; private set; }
