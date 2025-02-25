@@ -1498,46 +1498,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <music>k__BackingField.Path
-      value: event:/Music/Level1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <ambience>k__BackingField.Path
-      value: event:/Ambience/Wind
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data1
-      value: 1059356133
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data2
-      value: 1158641210
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data3
-      value: 252848270
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data4
-      value: 243961429
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <ambience>k__BackingField.Guid.Data1
-      value: 1985630584
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <ambience>k__BackingField.Guid.Data2
-      value: 1134950010
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <ambience>k__BackingField.Guid.Data3
-      value: 204448399
-      objectReference: {fileID: 0}
-    - target: {fileID: 598113917292355386, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
-      propertyPath: <ambience>k__BackingField.Guid.Data4
-      value: 909738537
-      objectReference: {fileID: 0}
     - target: {fileID: 6764670044843138025, guid: 99d0cbaaca2136f459eaf1a235f5d60c, type: 3}
       propertyPath: m_Name
       value: AudioManager
