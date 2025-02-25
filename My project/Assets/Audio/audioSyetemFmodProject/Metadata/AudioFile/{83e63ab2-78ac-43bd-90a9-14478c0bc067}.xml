@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{83e63ab2-78ac-43bd-90a9-14478c0bc067}">
+		<property name="assetPath">
+			<value>Music &amp; Sound/selfSFX/Move/dash2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.1029024943310657</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{98df8345-9c69-4651-b491-f41d52b5c2c4}</destination>
+		</relationship>
+	</object>
+</objects>

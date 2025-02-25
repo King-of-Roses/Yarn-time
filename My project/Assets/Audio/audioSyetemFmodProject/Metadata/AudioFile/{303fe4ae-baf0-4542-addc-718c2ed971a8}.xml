@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{303fe4ae-baf0-4542-addc-718c2ed971a8}">
+		<property name="assetPath">
+			<value>Music &amp; Sound/selfSFX/Interactables/lose3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1705668934240363</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{98df8345-9c69-4651-b491-f41d52b5c2c4}</destination>
+		</relationship>
+	</object>
+</objects>
