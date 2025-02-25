@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8425646984449909257
+--- !u!114 &-7964723855083100086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../../Users/Music/audioSyetemFmodProject/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638759135709036383
+  Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638760965606477756
   FileSizes:
   - Name: Desktop
-    Value: 1000
+    Value: 1036
   Exists: 1
---- !u!114 &-7586985052778911442
+--- !u!114 &-7548226711595132101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,33 +32,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: ../../../Users/Music/audioSyetemFmodProject/Build/Desktop/Music.bank
+  Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638759135716351971
+  lastModified: 638760965606948861
   FileSizes:
   - Name: Desktop
     Value: 654336
-  Exists: 1
---- !u!114 &-2606162739867379974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambience.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../Users/Music/audioSyetemFmodProject/Build/Desktop/Ambience.bank
-  Name: Ambience
-  StudioPath: bank:/Ambience
-  lastModified: 638759120659270404
-  FileSizes:
-  - Name: Desktop
-    Value: 702240
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -73,23 +53,23 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -8425646984449909257}
-  - {fileID: 3972524093118265907}
-  - {fileID: 6761248683317968832}
-  - {fileID: -2606162739867379974}
-  - {fileID: -7586985052778911442}
+  - {fileID: 7174829893839350209}
+  - {fileID: 7608099388756988438}
+  - {fileID: -7964723855083100086}
+  - {fileID: -7548226711595132101}
+  - {fileID: 3597125998750685712}
   EditorEvents:
   - {fileID: 5697462971861008034}
   - {fileID: 5353359433900362950}
   - {fileID: 6785140814250019722}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3972524093118265907}
+  - {fileID: -7964723855083100086}
   StringsBanks:
-  - {fileID: -8425646984449909257}
-  cacheTime: 638759135716351971
+  - {fileID: 7174829893839350209}
+  cacheTime: 638760965607145566
   cacheVersion: 131622
---- !u!114 &3972524093118265907
+--- !u!114 &3597125998750685712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,15 +79,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: ../../../Users/Music/audioSyetemFmodProject/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638759135709011279
+  Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638760965607145566
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 9664
   Exists: 1
 --- !u!114 &5353359433900362950
 MonoBehaviour:
@@ -128,7 +108,7 @@ MonoBehaviour:
     Data3: -1392857937
     Data4: -737428965
   Banks:
-  - {fileID: 6761248683317968832}
+  - {fileID: 3597125998750685712}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -155,7 +135,7 @@ MonoBehaviour:
     Data3: 204448399
     Data4: 909738537
   Banks:
-  - {fileID: -2606162739867379974}
+  - {fileID: 7608099388756988438}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -163,26 +143,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 57500
---- !u!114 &6761248683317968832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../Users/Music/audioSyetemFmodProject/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638759120651163005
-  FileSizes:
-  - Name: Desktop
-    Value: 9664
-  Exists: 1
 --- !u!114 &6785140814250019722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +162,7 @@ MonoBehaviour:
     Data3: 252848270
     Data4: 243961429
   Banks:
-  - {fileID: -7586985052778911442}
+  - {fileID: -7548226711595132101}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -210,3 +170,43 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 58839
+--- !u!114 &7174829893839350209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638760965606667074
+  FileSizes:
+  - Name: Desktop
+    Value: 1000
+  Exists: 1
+--- !u!114 &7608099388756988438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638760965606223979
+  FileSizes:
+  - Name: Desktop
+    Value: 702240
+  Exists: 1

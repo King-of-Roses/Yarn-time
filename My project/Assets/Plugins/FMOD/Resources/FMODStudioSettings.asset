@@ -536,8 +536,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../Users/Music/audioSyetemFmodProject/audioSyetemFmodProject.fspro
-  sourceBankPath: ../../../Users/Music/audioSyetemFmodProject/Build
+  sourceProjectPath: Assets/Audio/audioSyetemFmodProject/audioSyetemFmodProject.fspro
+  sourceBankPath: Assets/Audio/audioSyetemFmodProject/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
