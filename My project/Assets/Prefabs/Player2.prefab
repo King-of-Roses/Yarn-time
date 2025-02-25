@@ -130,9 +130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  airwalkSpeed: 2
+  airwalkSpeed: 4
   runSpeed: 7
-  jumpImpulse: 10
+  jumpImpulse: 5
   _isMoving: 0
   _isRunning: 0
   _isFacingRight: 1
