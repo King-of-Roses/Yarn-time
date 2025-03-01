@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1950162564007353164}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 4191261348050919580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.472, y: -1.661, z: 0.0011357514}
+  m_LocalPosition: {x: -9.472, y: 0, z: 0.0011357514}
   m_LocalScale: {x: 2.7, y: 2.7, z: 2.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d0247c1a5ed4a49b3bcdf053fe3401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  airwalkSpeed: 4
+  walkSpeed: 5.5
+  airwalkSpeed: 5
   runSpeed: 7
   jumpImpulse: 5
   _isMoving: 0
@@ -315,8 +315,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001245428, y: 0.021171989}
-  m_Size: {x: 0.15927137, y: 0.28381264}
+  m_Offset: {x: 0.001245428, y: 0.00022066964}
+  m_Size: {x: 0.15927137, y: 0.32571527}
   m_Direction: 0
 --- !u!114 &1950162564007353164
 MonoBehaviour:

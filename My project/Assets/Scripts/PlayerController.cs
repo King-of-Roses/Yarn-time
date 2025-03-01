@@ -177,6 +177,10 @@ public class PlayerController : MonoBehaviour
         if (IsDead) return; // 避免重复死亡
         IsDead = true; // 标记角色已死亡
         animator.Play("player_die"); // 直接播放死亡动画
+
+        rb.velocity = Vector2.zero; // 立即停止角色移动
+        rb.isKinematic = true; // 让角色在死亡时不受物理影响
+
         StartCoroutine(RespawnAfterDeath());
 
     }
@@ -184,7 +188,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator RespawnAfterDeath()
     {
         // 等待死亡动画播放完成
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         Respawn();
     }
@@ -192,6 +196,7 @@ public class PlayerController : MonoBehaviour
     public void Respawn()
     {
         transform.position = startPosition;
+        rb.isKinematic = false;
         IsDead = false;
     }
 

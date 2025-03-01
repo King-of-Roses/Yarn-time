@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1215316898713540021}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bac6e88b33f4984a9ee83f999120f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  airwalkSpeed: 4
+  walkSpeed: 5.5
+  airwalkSpeed: 5
   runSpeed: 8
   jumpImpulse: 7
   _isMoving: 0
@@ -311,8 +311,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0098177595, y: -0.015708288}
-  m_Size: {x: 0.17077065, y: 0.29643744}
+  m_Offset: {x: -0.0098177595, y: -0.009422819}
+  m_Size: {x: 0.17077065, y: 0.2838665}
   m_Direction: 0
 --- !u!114 &1215316898713540021
 MonoBehaviour:
