@@ -33,6 +33,11 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, worldPos);
     }
 
+    public void PlayOneShotUI(EventReference sound)
+    {
+        RuntimeManager.PlayOneShot(sound); 
+    }
+
     public EventInstance CreateInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
@@ -42,20 +47,34 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        InitializeAmbience(FmodEvents.instance.ambience);
-        InitializeMusic(FmodEvents.instance.music);
+        if (IsMainMenuScene())
+        {
+            PlayMusic(FmodEvents.instance.mainMenuMusic);
+        }
+        else
+        {
+            PlayMusic(FmodEvents.instance.music);          // 播放关卡 BGM
+            PlayAmbience(FmodEvents.instance.ambience);    // 播放环境音
+        }
+        
     }
 
-    private void InitializeAmbience(EventReference ambienceEventReference)
+    public void PlayMusic(EventReference musicEventReference)
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicEventInstance.release();
+        }
+
+        musicEventInstance = CreateInstance(musicEventReference);
+        musicEventInstance.start();
+    }
+
+    private void PlayAmbience(EventReference ambienceEventReference)
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
-    }
-
-    private void InitializeMusic(EventReference musicEventReference)
-    {
-        musicEventInstance = CreateInstance(musicEventReference);
-        musicEventInstance.start();
     }
 
     private void CleanUp()
@@ -78,5 +97,9 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         
+    }
+    private bool IsMainMenuScene()
+    {
+        return UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu"; // 修改成你的主菜单场景名称
     }
 }

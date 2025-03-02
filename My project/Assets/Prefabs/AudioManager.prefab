@@ -58,6 +58,20 @@ MonoBehaviour:
       Data3: 252848270
       Data4: 243961429
     Path: event:/Music/Level1
+  <mainMenuMusic>k__BackingField:
+    Guid:
+      Data1: 833708309
+      Data2: 1336991007
+      Data3: 1887901581
+      Data4: -1501319129
+    Path: event:/Music/UI
+  <buttonClick>k__BackingField:
+    Guid:
+      Data1: 1336268173
+      Data2: 1099243132
+      Data3: -627610490
+      Data4: -906516687
+    Path: event:/SFX/UIButtons
   <playerFootSteps>k__BackingField:
     Guid:
       Data1: 55879493
