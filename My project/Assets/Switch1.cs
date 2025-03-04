@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
+    public Sprite button_standard;
+    public Sprite button_pressed;
+    public SpriteRenderer switchRenderer;
     public GameObject trap;
     
     // Counts the number of activations, max is the number of players
@@ -15,8 +18,11 @@ public class Switch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             switchCounter++;
+            switchRenderer.sprite = button_pressed;
+
             trap.gameObject.SetActive(false);
         }
     }
@@ -26,6 +32,8 @@ public class Switch : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && switchCounter < 2)
         {
             switchCounter--;
+            switchRenderer.sprite = button_standard;
+
             trap.gameObject.SetActive(true);
         }
         else if (collision.gameObject.CompareTag("Player"))

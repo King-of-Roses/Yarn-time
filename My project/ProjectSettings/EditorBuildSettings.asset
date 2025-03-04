@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MVPScene.unity
     guid: 150c144066ce52f4494afa82e43e049a
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 293cd0267696bd54093f6e307e381644
   m_configObjects: {}
