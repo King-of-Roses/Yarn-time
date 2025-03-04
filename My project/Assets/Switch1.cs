@@ -30,13 +30,14 @@ public class Switch : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (switchCounter < 2)
+            switchCounter--;
+            if (switchCounter < 1)
             {
                 switchRenderer.sprite = button_standard;
                 trap.gameObject.SetActive(true);
             }
 
-            switchCounter--;
+            
         }
     }
 }
