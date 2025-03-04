@@ -18,7 +18,6 @@ public class Switch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        if (collision.gameObject.CompareTag("Player"))
         {
             switchCounter++;
             switchRenderer.sprite = button_pressed;
@@ -29,15 +28,14 @@ public class Switch : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && switchCounter < 2)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            switchCounter--;
-            switchRenderer.sprite = button_standard;
+            if (switchCounter < 2)
+            {
+                switchRenderer.sprite = button_standard;
+                trap.gameObject.SetActive(true);
+            }
 
-            trap.gameObject.SetActive(true);
-        }
-        else if (collision.gameObject.CompareTag("Player"))
-        {
             switchCounter--;
         }
     }
