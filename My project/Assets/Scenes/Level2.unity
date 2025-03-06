@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: wallDistance
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3322561518761864135, guid: fbaaac7ccf4881e489fcae25baf5a9a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4191261348050919580, guid: fbaaac7ccf4881e489fcae25baf5a9a4, type: 3}
       propertyPath: m_Name
       value: Player2
@@ -11430,6 +11434,10 @@ PrefabInstance:
     - target: {fileID: 1803687043013812671, guid: cc23c5952e7060e44bb7ef0607da66c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534652343202331347, guid: cc23c5952e7060e44bb7ef0607da66c4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6519271316509753409, guid: cc23c5952e7060e44bb7ef0607da66c4, type: 3}
       propertyPath: m_Name

@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638766159198899340
+  lastModified: 638768572098433149
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -35,12 +35,12 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638766159202135854
+  lastModified: 638768572099531021
   FileSizes:
   - Name: Desktop
     Value: 1268512
   Exists: 1
---- !u!114 &-3989880522843998275
+--- !u!114 &-4128680235070619462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 166
---- !u!114 &-719952334462601982
+--- !u!114 &-524500811104854730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,17 +116,17 @@ MonoBehaviour:
   - {fileID: 5697462971861008034}
   - {fileID: 5353359433900362950}
   - {fileID: 6785140814250019722}
-  - {fileID: 924868346252551997}
-  - {fileID: -719952334462601982}
-  - {fileID: -3989880522843998275}
+  - {fileID: 249258858593738874}
+  - {fileID: -524500811104854730}
+  - {fileID: -4128680235070619462}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7964723855083100086}
   StringsBanks:
   - {fileID: 7174829893839350209}
-  cacheTime: 638766159202135854
+  cacheTime: 638768572099997183
   cacheVersion: 131622
---- !u!114 &924868346252551997
+--- !u!114 &249258858593738874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638765354538568923
+  lastModified: 638768572099997183
   FileSizes:
   - Name: Desktop
     Value: 12384
@@ -269,7 +269,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638766159198929426
+  lastModified: 638768572098928430
   FileSizes:
   - Name: Desktop
     Value: 1130
@@ -289,7 +289,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638765335486522634
+  lastModified: 638768572097940045
   FileSizes:
   - Name: Desktop
     Value: 702240
