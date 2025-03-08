@@ -102,6 +102,17 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void SetBGMVolume(float volume)
+    {
+        VCA bgmVCA = RuntimeManager.GetVCA("vca:/BGM_VCA");
+        bgmVCA.setVolume(volume); // volume 的取值通常在 0 到 1 之间
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        VCA sfxVCA = RuntimeManager.GetVCA("vca:/SFX_VCA");
+        sfxVCA.setVolume(volume); // volume 的取值通常在 0 到 1 之间
+    }
     private void CleanUp()
     {
         foreach (EventInstance eventInstance in eventInstances)
