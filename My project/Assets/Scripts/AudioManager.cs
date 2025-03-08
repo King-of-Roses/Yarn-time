@@ -77,6 +77,31 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
+
+    public void PauseAudio()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.setPaused(true);
+        }
+        if (ambienceEventInstance.isValid())
+        {
+            ambienceEventInstance.setPaused(true);
+        }
+    }
+
+    public void ResumeAudio()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.setPaused(false);
+        }
+        if (ambienceEventInstance.isValid())
+        {
+            ambienceEventInstance.setPaused(false);
+        }
+    }
+
     private void CleanUp()
     {
         foreach (EventInstance eventInstance in eventInstances)
