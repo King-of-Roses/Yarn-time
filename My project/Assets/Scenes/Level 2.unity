@@ -206,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: trap
       value: 
-      objectReference: {fileID: 1648697129}
+      objectReference: {fileID: 1648697135}
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: switchCounter
       value: 
@@ -295,8 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a977456e3fa13142a8842cce378c47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 1162072392}
-  playerController2: {fileID: 1766827465}
 --- !u!61 &423627661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -496,7 +494,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32670593, y: -0.09998989, z: -10}
+  m_LocalPosition: {x: 0.08366108, y: -0.09998989, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -800,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: trap
       value: 
-      objectReference: {fileID: 2311214620739534}
+      objectReference: {fileID: 2311214620739540}
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: switchCounter
       value: 
@@ -3397,7 +3395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_Data.e00
@@ -3457,7 +3455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_RefCount
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
@@ -3551,10 +3549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8558927014480469891, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1648697135}
   m_SourcePrefab: {fileID: 100100000, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
 --- !u!114 &1648697128 stripped
 MonoBehaviour:
@@ -3567,17 +3569,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51842a4b37406ba4ebfea368855a7421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1648697129 stripped
+--- !u!114 &1648697135
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
-  m_PrefabInstance: {fileID: 1648697127}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012816223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a977456e3fa13142a8842cce378c47b, type: 3}
+  m_Script: {fileID: 11500000, guid: a3cac822470ad1e458b34c8ca2004028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1162072392}
+  playerController2: {fileID: 1766827465}
 --- !u!4 &1672065000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6875827273078062332, guid: c839414e79affc641a6496e2392da86a, type: 3}
@@ -3620,7 +3625,7 @@ PrefabInstance:
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: trap
       value: 
-      objectReference: {fileID: 2027853827}
+      objectReference: {fileID: 2027853833}
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: switchCounter
       value: 
@@ -5400,11 +5405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_RefCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
@@ -5474,10 +5479,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8558927014480469891, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2027853833}
   m_SourcePrefab: {fileID: 100100000, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
 --- !u!114 &2027853826 stripped
 MonoBehaviour:
@@ -5490,17 +5499,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51842a4b37406ba4ebfea368855a7421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2027853827 stripped
+--- !u!114 &2027853833
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
-  m_PrefabInstance: {fileID: 2027853825}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826431698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a977456e3fa13142a8842cce378c47b, type: 3}
+  m_Script: {fileID: 11500000, guid: a3cac822470ad1e458b34c8ca2004028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1162072392}
+  playerController2: {fileID: 1766827465}
 --- !u!1001 &2089972636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8091,7 +8103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_Data.e00
@@ -8151,7 +8163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_RefCount
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
@@ -8245,10 +8257,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8558927014480469891, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6572519186877086020}
   m_SourcePrefab: {fileID: 100100000, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
 --- !u!114 &2089972637 stripped
 MonoBehaviour:
@@ -8259,17 +8275,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51842a4b37406ba4ebfea368855a7421, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2089972638 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
-  m_PrefabInstance: {fileID: 2089972636}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6572519186877086014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a977456e3fa13142a8842cce378c47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2311214620739532
@@ -10862,7 +10867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_Data.e00
@@ -10922,7 +10927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileMatrixArray.Array.data[0].m_RefCount
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4475191721127391988, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
@@ -11004,10 +11009,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8558927014480469891, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2311214620739540}
   m_SourcePrefab: {fileID: 100100000, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
 --- !u!114 &2311214620739533 stripped
 MonoBehaviour:
@@ -11020,17 +11029,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51842a4b37406ba4ebfea368855a7421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2311214620739534 stripped
+--- !u!114 &2311214620739540
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7403408119980917801, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
-  m_PrefabInstance: {fileID: 2311214620739532}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639240461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a977456e3fa13142a8842cce378c47b, type: 3}
+  m_Script: {fileID: 11500000, guid: a3cac822470ad1e458b34c8ca2004028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1162072392}
+  playerController2: {fileID: 1766827465}
 --- !u!1001 &1334930148641845182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12594,7 +12606,7 @@ PrefabInstance:
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: trap
       value: 
-      objectReference: {fileID: 2089972638}
+      objectReference: {fileID: 6572519186877086020}
     - target: {fileID: 304665565660294352, guid: 15f136a9f321b774485d4e169550add0, type: 3}
       propertyPath: switchCounter
       value: 
@@ -12714,6 +12726,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8558927014480469891, guid: ea324633428f7284aa3a0baecb60bc6f, type: 3}
   m_PrefabInstance: {fileID: 2089972636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6572519186877086020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6572519186877086014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3cac822470ad1e458b34c8ca2004028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 1162072392}
+  playerController2: {fileID: 1766827465}
 --- !u!156049354 &6829525175318301452
 Grid:
   m_ObjectHideFlags: 0

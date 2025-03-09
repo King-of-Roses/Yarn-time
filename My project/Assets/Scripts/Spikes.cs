@@ -14,7 +14,7 @@ public class Spikes : MonoBehaviour
             }
         }
 
-        // ¼ì²é Player2
+        // Â¼Ã¬Â²Ã© Player2
         if (collision.collider.TryGetComponent<PlayerController2>(out PlayerController2 player2))
         {
             if (!player2.IsDead)
