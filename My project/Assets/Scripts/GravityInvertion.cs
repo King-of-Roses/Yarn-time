@@ -26,15 +26,6 @@ public class GravityInvertion : MonoBehaviour
 
     private void InvertGravity()
     {
-        isGravityInverted = !isGravityInverted;
-
-        if (isGravityInverted)
-        {
-            yarnPlayer.gravityScale = -1;
-        }
-        else
-        {
-            yarnPlayer.gravityScale = 1;
-        }
+        yarnPlayer.gravityScale *= -1;
     }
 }
