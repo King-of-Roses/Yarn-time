@@ -19,7 +19,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1588
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7548226711595132101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1131808
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4128680235070619462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   - {fileID: -7964723855083100086}
   StringsBanks:
   - {fileID: 7174829893839350209}
-  cacheTime: 638770658736561994
+  cacheTime: 638768572099997183
   cacheVersion: 131622
 --- !u!114 &3597125998750685712
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12384
-  Exists: 1
+  Exists: 0
 --- !u!114 &5353359433900362950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,8 +190,7 @@ MonoBehaviour:
     Data2: 1134950010
     Data3: 204448399
     Data4: 909738537
-  Banks:
-  - {fileID: 7608099388756988438}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -241,10 +240,10 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638770658735952235
+  lastModified: 638768572098928430
   FileSizes:
   - Name: Desktop
-    Value: 1260
+    Value: 1130
   Exists: 1
 --- !u!114 &7608099388756988438
 MonoBehaviour:
@@ -261,7 +260,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638770658735806403
+  lastModified: 638768572097940045
   FileSizes:
   - Name: Desktop
     Value: 702240
