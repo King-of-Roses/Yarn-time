@@ -7,12 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    private int players_touching;
+    private int players_touching = 0;
     
-    private void Start()
-    {
-        players_touching = 0;
-    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
