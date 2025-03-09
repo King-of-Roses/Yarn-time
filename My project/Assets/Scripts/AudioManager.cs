@@ -77,6 +77,42 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
+
+    public void PauseAudio()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.setPaused(true);
+        }
+        if (ambienceEventInstance.isValid())
+        {
+            ambienceEventInstance.setPaused(true);
+        }
+    }
+
+    public void ResumeAudio()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.setPaused(false);
+        }
+        if (ambienceEventInstance.isValid())
+        {
+            ambienceEventInstance.setPaused(false);
+        }
+    }
+
+    public void SetBGMVolume(float volume)
+    {
+        VCA bgmVCA = RuntimeManager.GetVCA("vca:/BGM_VCA");
+        bgmVCA.setVolume(volume); // volume 的取值通常在 0 到 1 之间
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        VCA sfxVCA = RuntimeManager.GetVCA("vca:/SFX_VCA");
+        sfxVCA.setVolume(volume); // volume 的取值通常在 0 到 1 之间
+    }
     private void CleanUp()
     {
         foreach (EventInstance eventInstance in eventInstances)
