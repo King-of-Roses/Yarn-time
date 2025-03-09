@@ -5,7 +5,7 @@ using Cinemachine;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Switch : MonoBehaviour
+public class Switch1 : MonoBehaviour
 {
     public Sprite button_standard;
     public Sprite button_pressed;
