@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Trap1 : MonoBehaviour
+public class TrapNotBellowTrap : MonoBehaviour
 {
     public PlayerController playerController;
     public PlayerController2 playerController2;
