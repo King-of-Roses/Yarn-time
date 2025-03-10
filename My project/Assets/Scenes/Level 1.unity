@@ -8131,6 +8131,10 @@ PrefabInstance:
       propertyPath: airwalkSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1713898334919621756, guid: cc23c5952e7060e44bb7ef0607da66c4, type: 3}
+      propertyPath: _isFacingRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1803687043013812671, guid: cc23c5952e7060e44bb7ef0607da66c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.72

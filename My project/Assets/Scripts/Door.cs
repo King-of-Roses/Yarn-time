@@ -31,7 +31,7 @@ public class Door : MonoBehaviour
     {
         if (players_touching == 2) 
         {
-            if (SceneManager.GetActiveScene().buildIndex < 2)
+            if (SceneManager.GetActiveScene().buildIndex < 3)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             } 
