@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using FMOD.Studio;
@@ -174,12 +173,12 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        if (IsDead) return; // ±ÜÃâÖØ¸´ËÀÍö
-        IsDead = true; // ±ê¼Ç½ÇÉ«ÒÑËÀÍö
-        animator.Play("player_die"); // Ö±½Ó²¥·ÅËÀÍö¶¯»­
+        if (IsDead) return; // ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½
+        IsDead = true; // ï¿½ï¿½Ç½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        animator.Play("player_die"); // Ö±ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        rb.velocity = Vector2.zero; // Á¢¼´Í£Ö¹½ÇÉ«ÒÆ¶¯
-        //rb.isKinematic = true; // ÈÃ½ÇÉ«ÔÚËÀÍöÊ±²»ÊÜÎïÀíÓ°Ïì
+        rb.velocity = Vector2.zero; // ï¿½ï¿½ï¿½ï¿½Í£Ö¹ï¿½ï¿½É«ï¿½Æ¶ï¿½
+        //rb.isKinematic = true; // ï¿½Ã½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½
         gameObject.GetComponent<PlayerInput>().enabled = false;
 
         StartCoroutine(RespawnAfterDeath());
@@ -188,7 +187,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator RespawnAfterDeath()
     {
-        // µÈ´ıËÀÍö¶¯»­²¥·ÅÍê³É
+        // ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         yield return new WaitForSeconds(1f);
 
         Respawn();
