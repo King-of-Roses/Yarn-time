@@ -9,11 +9,15 @@ public class Switch1 : MonoBehaviour
 {
     public Sprite button_standard;
     public Sprite button_pressed;
-    public SpriteRenderer switchRenderer;
+    private SpriteRenderer switchRenderer;
     public GameObject trap;
     
     // Counts the number of activations, max is the number of players
     private int switchCounter = 0;
+    public void Start()
+    {
+        switchRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
