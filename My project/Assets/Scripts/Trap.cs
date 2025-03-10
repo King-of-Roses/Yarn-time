@@ -24,9 +24,17 @@ public class Trap : MonoBehaviour
         {
             playerController.Die();
             playerController2.Die();
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            StartCoroutine(Reset());
         
         }
+    }
+
+    private IEnumerator Reset()
+    {
+     
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ActivateTrap () 

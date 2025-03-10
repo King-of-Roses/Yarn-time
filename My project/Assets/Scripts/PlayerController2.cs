@@ -187,24 +187,24 @@ public class PlayerController2 : MonoBehaviour
         //rb.isKinematic = true; // 让角色在死亡时不受物理影响
         gameObject.GetComponent<PlayerInput>().enabled = false;
 
-        StartCoroutine(RespawnAfterDeath());
+        //StartCoroutine(RespawnAfterDeath());
     }
 
-    private IEnumerator RespawnAfterDeath()
-    {
-        // 等待死亡动画播放完成
-        yield return new WaitForSeconds(1f);
+    //private IEnumerator RespawnAfterDeath()
+    //{
+    //    // 等待死亡动画播放完成
+    //    yield return new WaitForSeconds(1f);
 
-        Respawn();
-    }
+    //    Respawn();
+    //}
 
-    public void Respawn()
-    {
-        transform.position = startPosition;
-        //rb.isKinematic = false;
-        IsDead = false;
-        gameObject.GetComponent<PlayerInput>().enabled = true;
-    }
+    //public void Respawn()
+    //{
+    //    transform.position = startPosition;
+    //    //rb.isKinematic = false;
+    //    IsDead = false;
+    //    gameObject.GetComponent<PlayerInput>().enabled = true;
+    //}
 
     private void UpdateSound()
     {

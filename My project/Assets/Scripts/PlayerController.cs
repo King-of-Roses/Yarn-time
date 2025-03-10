@@ -181,25 +181,25 @@ public class PlayerController : MonoBehaviour
         //rb.isKinematic = true; // �ý�ɫ������ʱ��������Ӱ��
         gameObject.GetComponent<PlayerInput>().enabled = false;
 
-        StartCoroutine(RespawnAfterDeath());
+        //StartCoroutine(RespawnAfterDeath());
 
     }
 
-    private IEnumerator RespawnAfterDeath()
-    {
-        // �ȴ����������������
-        yield return new WaitForSeconds(1f);
+    //private IEnumerator RespawnAfterDeath()
+    //{
+    //    // �ȴ����������������
+    //    yield return new WaitForSeconds(1f);
 
-        Respawn();
-    }
+    //    Respawn();
+    //}
 
-    public void Respawn()
-    {
-        transform.position = startPosition;
-        //rb.isKinematic = false;
-        IsDead = false;
-        gameObject.GetComponent<PlayerInput>().enabled = true;
-    }
+    //public void Respawn()
+    //{
+    //    transform.position = startPosition;
+    //    //rb.isKinematic = false;
+    //    IsDead = false;
+    //    gameObject.GetComponent<PlayerInput>().enabled = true;
+    //}
 
     private void UpdateSound()
     {
