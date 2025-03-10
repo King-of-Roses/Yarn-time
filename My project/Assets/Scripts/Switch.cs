@@ -13,13 +13,13 @@ public class Switch : MonoBehaviour
     public Trap trap;
     public SwitchCounter switchCounter;
 
+    // Counts the number of players currently on the switch
+    private int localCounter = 0;
+
     public void Start()
     {
         switchRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
-
-    // Counts the number of activations, max is the number of players
-    private int localCounter = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
