@@ -353,11 +353,11 @@ PrefabInstance:
     - target: {fileID: 569696027413534978, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: button_pressed
       value: 
-      objectReference: {fileID: 797080432, guid: 7a860e5744535c04ca1646c1237cfde5, type: 3}
+      objectReference: {fileID: -1803544539, guid: cea691c7a1c24b34aa8f4a25ae6803de, type: 3}
     - target: {fileID: 569696027413534978, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: button_standard
       value: 
-      objectReference: {fileID: -134036820, guid: 7a860e5744535c04ca1646c1237cfde5, type: 3}
+      objectReference: {fileID: -928625657, guid: cea691c7a1c24b34aa8f4a25ae6803de, type: 3}
     - target: {fileID: 569696027413534978, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: targetRigidBody
       value: 
@@ -407,9 +407,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7573505660411919972, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573505660411919972, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573505660411919972, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -134036820, guid: 7a860e5744535c04ca1646c1237cfde5, type: 3}
+      objectReference: {fileID: -928625657, guid: cea691c7a1c24b34aa8f4a25ae6803de, type: 3}
+    - target: {fileID: 7573505660411919972, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -849,11 +861,11 @@ PrefabInstance:
     - target: {fileID: 569696027413534978, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: button_pressed
       value: 
-      objectReference: {fileID: 797080432, guid: 7a860e5744535c04ca1646c1237cfde5, type: 3}
+      objectReference: {fileID: -1803544539, guid: cea691c7a1c24b34aa8f4a25ae6803de, type: 3}
     - target: {fileID: 569696027413534978, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: button_standard
       value: 
-      objectReference: {fileID: -134036820, guid: 7a860e5744535c04ca1646c1237cfde5, type: 3}
+      objectReference: {fileID: -928625657, guid: cea691c7a1c24b34aa8f4a25ae6803de, type: 3}
     - target: {fileID: 569696027413534978, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: targetRigidBody
       value: 
@@ -905,7 +917,7 @@ PrefabInstance:
     - target: {fileID: 7573505660411919972, guid: 8580d85c6c0152d44b0bf3f2e57a1898, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -134036820, guid: 7a860e5744535c04ca1646c1237cfde5, type: 3}
+      objectReference: {fileID: -928625657, guid: cea691c7a1c24b34aa8f4a25ae6803de, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
