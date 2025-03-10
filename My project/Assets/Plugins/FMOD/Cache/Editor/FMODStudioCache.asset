@@ -123,7 +123,7 @@ MonoBehaviour:
   - {fileID: -7964723855083100086}
   StringsBanks:
   - {fileID: 7174829893839350209}
-  cacheTime: 638772061352212533
+  cacheTime: 638770658736561994
   cacheVersion: 131622
 --- !u!114 &3597125998750685712
 MonoBehaviour:
@@ -240,7 +240,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638772061351071813
+  lastModified: 638770658735952235
   FileSizes:
   - Name: Desktop
     Value: 1260
@@ -260,7 +260,7 @@ MonoBehaviour:
   Path: Assets/Audio/audioSyetemFmodProject/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638772061349999575
+  lastModified: 638770658735806403
   FileSizes:
   - Name: Desktop
     Value: 702240
